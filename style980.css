@@ -1,0 +1,41 @@
+@media all and (max-width: 1000px){
+
+    .fs-head, .fs-nav, .fs-productSection{
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box;
+    }
+
+
+
+
+
+    /* .fs-head__wrapper{
+        padding-left: 100px;
+    }
+    .fs-nav{
+
+    }
+    .fs-topnews__wrapper{
+
+    }
+    .fs-shopby__wrapper{
+
+    }
+    .fs-productSection__wrapper{
+
+    }
+    .fs-article__wrapper{
+
+    }
+    .fs-footer__wrap{
+
+    }
+    .fs-contact__wrapper{
+
+    }
+    .fs-copyright__wrapper{
+        margin-left: 20px;
+        margin-right: 20px;
+    } */
+}
