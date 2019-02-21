@@ -133,36 +133,36 @@
     box-sizing: border-box;
 }
                 /* <!-- =========== top product block ============= --> */
-/* ==== test ==== */
+
+                /* =================== slider dots ================= */
 .slick-dots{
-    bottom: -10px;
+    bottom: -20px;
 }
 .slick-dots li {
     font-family: 'Aller regular';
     font-size: 12px;
-    width: 100px;
+    width: 150px;
     height: 6px;
-    background: #57c5a0;
-    margin: 15px;
+    background: #000000;
+    margin: 10px 10px 5px 10px;
     color: #adadad;
-}
+    z-index: 2;
 
+}
+.slick-dots li.slick-active{
+    background: #57c5a0;
+}
 li.slick-active{
     color: #ffffff;
 }
-.slick-dots li:nth-child(1)::after{
-    content: "Pink Shoes Now at $149.99";
-
+.slick-dots {
+    margin-top: 15px;
 }
-.slick-dots li:nth-child(2)::after{
-    content: "Anna Field Limited Edition";
+.dots-title_slider{
+    font-size: 18px;
 }
-.slick-dots li:nth-child(3)::after{
-    content: "Prada Winter is comming";
-     
-}
-.slick-dots li button:before{
-    font-size:0px;
+.dots-utitle_slider{
+    color: #a7a7a7;
 }
 .underslider{
     width: 100%;
@@ -170,21 +170,32 @@ li.slick-active{
     height: 100px;
     position: absolute;
     top: 350px;
-    z-index: -1;
-}
-/* ..slick-dots li{
-    margin: 10px;
-    width: 40px;
-    height: 4px;
-} */
-/* .slick-dots li button:before
-{
-    font-size: 20px;
-    line-height: 20px;
-    ...
-} */
-/* ===== */
+    z-index: 1;
+    display: none;
 
+}
+.underslider_line{
+    display: flex;
+    margin: 18px auto;
+    width: 510px;
+    height: 12px;
+    background: #000000;
+    box-sizing: border-box;
+    display: none;
+
+}
+.underslider_line span{
+    margin: 2px;
+    width: 170px;
+    border-right: 2px #5f5f5f solid; 
+    box-sizing: border-box;   
+}
+
+.slick-dots li button:before{
+    font-size:0px;
+}
+
+/* ============ slider dots end============== */
 .fs-topnews{
     height: 250px;
     width: 100%;
@@ -192,7 +203,7 @@ li.slick-active{
     background-size: cover;
     background-position: center bottom;
     margin: 0 auto;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
 }
 .fs-topnews__wrapper{
     max-width: 960px;
@@ -336,17 +347,29 @@ li.slick-active{
     
 }
 .product_block{
-    margin-bottom: 30px ;
+    margin-bottom: 30px;
+    max-width: 300px;
+    width: 100%;
+    min-width: 250px;
 }
-.product_block img{
+
+
+.product_block__shoes{
+    max-width: 300px;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
     border-bottom: 1px #cccccc solid;
+    box-sizing: border-box;
+    width: 100%;
 }
 .product_info{
     display: flex;
     background: #ffffff;
     height: 46px;
-    width: 300px;
-    margin-top: -4px;
+    max-width: 300px;
+    margin-top: 0px;
+    width: 100%;
 }
 .product_price{
     width: 65px;
