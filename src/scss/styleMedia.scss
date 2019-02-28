@@ -1,0 +1,368 @@
+$siteStyleGreen: #57c5a0;
+$blackColor: #000000;
+@media all and (max-width: 960px){
+
+    /* ============= hide section =============== */
+    .fs-shopby{
+        display: none;
+    }
+    .fs-productSection{
+        display: none;
+    }
+    /* ================================================ */
+
+    .fs-head, .fs-productSection{
+        padding-left: 10px;
+        padding-right: 1px;
+        box-sizing: border-box;
+    }
+    .underslider{
+        display: block;
+        margin-top: 50px;
+        &_line{
+            display: flex;
+        }
+    }
+    .fs-topnews{
+        margin-bottom: 50px;
+    }
+    /* ============= filter section =========== */
+    .fs-filters960px{
+        clear: both;
+        width: 100%;
+        background: #242424;
+        display: block;
+        margin-top: 44px;
+        box-sizing: border-box;
+        &__wrapper{
+            max-width: 960px;
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+            .fs-filters960px__onsale, .fs-filters960px__musthave, .fs-filters960px__offers{
+                position: relative;
+                margin: 20px 15px;
+                .fs-filters960px__img{
+                    width: 100%;
+                    height: auto;
+                    cursor: pointer;
+                }
+                .fs-filters960px__title{
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    margin: 0;
+                    background: rgba(36, 36, 36, 0.5);
+                    width: 80%;
+                    background-origin: border-box;
+                    text-align: center;
+                    padding: 20px 0;
+                    color: #ffffff;
+                    text-transform: uppercase;
+                    font-family: 'Aller regular';
+                    font-size: calc((100vw - 300px)/(650 - 300) * (30 - 18) + 3px);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    /* ============== filter section end ============ */
+    /* ============ new arrival produt ============== */
+    .fs-products__max960px{
+        display: block;
+        width: 100%;
+        background: #ebe7df;
+        box-sizing: border-box;
+        .fs-products960px{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+        }
+        .fs-newarrival{
+            font-family: 'Aller regular';
+            font-size: 25px;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+        .product_block960px{
+            max-width: 300px;
+            width: 100%;
+            min-width: 200px;
+            margin: 0 5px 30px 5px;
+            .product_block__shoes{
+                max-width: 300px;
+                background: #ffffff;
+                display: flex;
+                justify-content: center;
+                border-bottom: 1px #cccccc solid;
+                box-sizing: border-box;
+                width: 100%;
+            }
+            .product_info{
+                display: flex;
+                background: #ffffff;
+                height: 46px;
+                max-width: 300px;
+                margin-top: 0px;
+                width: 100%;
+                cursor: pointer;
+                .fs-shoes__icons{
+                    display: none;
+                    width: 100%;
+                    justify-content: flex-end;
+                    margin-right: 5%;
+                    img{
+                        margin: 0 10px;
+                        cursor: pointer;
+                        color: $siteStyleGreen;
+                        align-items: flex-end;
+                    }
+                }
+                .product_price{
+                    display: block;
+                    height: 65px;
+                    background: $siteStyleGreen;
+                    text-align: center;
+                    padding: 26px 10px;
+                    box-sizing: border-box;
+                    color: #ffffff;
+                    font-family: 'Aller regular';
+                    font-size: 13px;
+                    margin: -18px 10px 0 10px;
+                }
+            }
+            .product_info:hover .fs-shoes__name{
+                display: none;
+            }
+            .product_info:hover .fs-shoes__icons{
+                display: flex;
+                align-items: center;
+            }
+            .product_info:hover{
+                justify-content: space-between;
+            
+            }
+        }
+    }
+}
+
+
+@media all and (max-width: 768px){
+    /* ========= hide block ========= */
+    .fs-article__shipping{
+        display: none;
+    }
+    .twitter_widget{
+        display: none;
+    }
+    .fs-navigation{
+        display: none;
+    }
+    .fs-topnews__left{
+        display: none;
+    }
+    /* =================================== */
+    .fs-nav{
+        .fs-navigation__drop{
+            display: block;
+        }
+    }
+    .fs-article{
+        .fs-article__wrapper{
+            .fs-blog_news{
+                width: 60%;
+            }
+            .fs-article__testimonials{
+                width: 30%;
+                margin-right: 10px;
+            }
+        }
+    }
+    .fs-footer{
+        .fs-footer__border{
+            .fs-footer__wrap{
+                flex-direction: column;
+                align-items: center;
+                .text_widget, .flickr_widget{
+                    width: 80%;
+                }
+            }
+        }
+    }          
+    
+    .fs-products{
+        .product_block{
+            .product_info{
+                .fs-shoes__icons img{
+                    margin: 0 5px;
+                }
+            }
+        }
+    }
+    .fs-topnews__shoes{
+        clear: both;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .fs-topnews{
+        &__wrapper{
+            width: 100%;
+            background: url(../../img/bgtopshoes.png) no-repeat;
+            height: 300px;
+            background-position: left bottom;
+            background-size: 400px 300px ;   
+            clear: both;
+            .fs-topnews__price{
+                margin: 0 40%;
+                float: none;
+                box-sizing: border-box;
+            }
+            .fs-news__block{
+                float: none;
+                max-width: 100%;
+                margin-bottom: 50px;
+                .fs-price__wrapper{
+                    padding-top: 40px;
+                }
+                .fs-topnews__title{
+                    margin: 0 40%;
+                    padding-top: 16px;
+                    max-width: 100%;
+                    width: 300px;
+                    font-size: 30px;
+            
+                }
+                .fs-topnews__article{
+                    margin: 0 40%;
+                    width: 50%;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 650px){
+    .product_block960px:last-child{
+    display: none;
+}
+    .fs-products{
+        .product_block{
+            .product_info{
+                .fs-shoes__icons img{
+                    margin: 0 10px;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 570px){
+    .fs-head__search{
+        display: none;
+    }
+    .underslider{
+        display: none;
+        &_line{
+            display: none;
+        }
+    }
+    .fs-filters960px{
+        display: none;
+    }
+
+    // ============================= //
+    .slick-slide{
+        height: 300px;
+    }
+
+    .fs-nav{
+        .fs-nav_shop {
+            .fs-head__searchM{
+            display: block;
+            }
+        }
+    }
+    .fs-topnews{
+        .fs-topnews__wrapper{
+            .fs-news__block{
+                float: none;
+                max-width: 100%;
+                margin-bottom: 50px;
+                .fs-topnews__price{
+                    margin: 0 40px;
+                    float: none;
+                    box-sizing: border-box;
+                }
+                .fs-topnews__title{
+                    margin: 0 40px;
+                    padding-top: 16px;
+                    max-width: 100%;
+                    width: 300px;
+                    font-size: 30px;
+            
+                }
+                .fs-topnews__article{
+                    margin: 0 40px;
+                    width: 80%;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    .fs-products__max960px{
+        .fs-products960px{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            .product_block__shoes{
+                margin-right: 0;
+            }
+        }
+    }
+    .fs-article{
+        .fs-article__wrapper{
+            flex-wrap: wrap;
+            justify-content: center;
+            .fs-article__testimonials{
+                width: 80%;
+                margin: 0 0 20px 0;
+        
+            }
+            .fs-blog_news{
+                width: 80%;
+            }
+        }
+    }
+
+    .fs-contact{
+        .fs-contact__wrapper{
+            flex-direction: column;
+            align-items: center;
+            .fs-contact__social{
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .fs-copyright{
+        .fs-copyright__wrapper{
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            .fs-footer__navigation p{
+                margin: 0;
+            }
+            .fs-footer__navigation p:last-child{
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+}

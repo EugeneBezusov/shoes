@@ -1,0 +1,32 @@
+{
+  "name": "work",
+  "version": "1.0.0",
+  "description": "work",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "work"
+  ],
+  "author": "Bezusov Eugene",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-livereload": "^4.0.1",
+    "gulp-sass": "^4.0.2"
+  },
+  "dependencies": {
+    "gulp-beautify": "^2.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EugeneBezusov/shoes.git"
+  },
+  "bugs": {
+    "url": "https://github.com/EugeneBezusov/shoes/issues"
+  },
+  "homepage": "https://github.com/EugeneBezusov/shoes#readme"
+}

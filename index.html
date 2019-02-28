@@ -4,11 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style980.css">
+    <link rel="stylesheet" id="mainStyle" href="build/css/style.css">
     <title>Fooseshoes</title>
 </head>
 <body>
@@ -18,7 +16,7 @@
         <div class="fs-head">
             <div class="fs-head__wrapper">
                 <div>
-                    <p class="fs-head__logo">Fooseshoes</p>
+                   <a href="#" class="fs-head__logoA"> <p class="fs-head__logo">Fooseshoes</p></a>
                 </div>
                 <div class="fs-head__loginsearch">
                     <p class="fs-head__search"> <img src="img/search.png" alt=""></p>
@@ -37,7 +35,13 @@
                 <p>Blog</p>
                 <p>Contact</p>
             </div>
+            <!-- +++++++++++menu+++++++++++ -->
+            <img src="img/menu-icon-13.png" alt="" class="fs-navigation__drop">
+            <!-- ========================== -->
             <div class="fs-nav_shop">
+                <div>
+                    <p class="fs-head__searchM"> <img src="img/search.png" alt=""></p>
+                </div>
                 <div class="fs-nav_favorite">
                     <img src="img/star.png" alt="">
                     <p>30</p>
@@ -46,16 +50,30 @@
                     <img src="img/cart.png" alt="">
                     <p>0</p>
                 </div>
+
             </div>
+        </div>
+        <div class="menunew">
+                <p>Home</p>
+                <p>Products</p>
+                <p>About</p>
+                <p>Pages</p>
+                <p>Blog</p>
+                <p>Contact</p>
         </div>
         <!-- =========== top product block (slider) ============= -->
         <div class="slider">
             <div>
                 <div class="fs-topnews">
                     <div class="fs-topnews__wrapper">
+                        <div class="fs-topnews__left">
+                            <img src="img/bgtopshoes.png" alt="" class="fs-topnews__shoes">
+                        </div>
                         <div class="fs-news__block">
-                            <p class="fs-topnews__price">$145.99</p>
-                            <p class="fs-topnews__title">Pink Shoes 2013 Collection</p>
+                            <div class="fs-price__wrapper">
+                                <p class="fs-topnews__price">$99.99</p>
+                            </div>
+                            <p class="fs-topnews__title">Pink Shoes <br> 2013 Collection</p>
                             <p class="fs-topnews__article">
                                     Nunc non fermentum nunc. Sed ut ante 
                                     eget leo tempor consequat sit amet eu orci. 
@@ -69,8 +87,13 @@
             <div>
                 <div class="fs-topnews">
                         <div class="fs-topnews__wrapper">
+                                <div class="fs-topnews__left">
+                                    <img src="img/bgtopshoes.png" alt="" class="fs-topnews__shoes">
+                                </div>
                             <div class="fs-news__block">
-                                <p class="fs-topnews__price">$99.99</p>
+                                <div class="fs-price__wrapper">
+                                    <p class="fs-topnews__price">$99.99</p>
+                                </div>
                                 <p class="fs-topnews__title">Anna Field <br> Limited Edition</p>
                                 <p class="fs-topnews__article">
                                         Nunc non fermentum nunc. Sed ut ante 
@@ -85,8 +108,13 @@
                 <div>
                     <div class="fs-topnews">
                             <div class="fs-topnews__wrapper">
+                                    <div class="fs-topnews__left">
+                                        <img src="img/bgtopshoes.png" alt="" class="fs-topnews__shoes">
+                                    </div>
                                 <div class="fs-news__block">
-                                    <p class="fs-topnews__price">$199.99</p>
+                                        <div class="fs-price__wrapper">
+                                                <p class="fs-topnews__price">$99.99</p>
+                                            </div>
                                     <p class="fs-topnews__title">Prada <br> Winter is Comming</p>
                                     <p class="fs-topnews__article">
                                             Nunc non fermentum nunc. Sed ut ante 
@@ -108,7 +136,7 @@
                 <p class="fs-shopby__dropdown">Categories
                     <img src="img/drop.png" alt="" class="drop__arrow">
                 </p>
-                <p class="fs-shopby__dropdown">Price
+                <p class="fs-shopby__dropdown filter-price">Price
                     <img src="img/drop.png" alt="" class="drop__arrow">
                 </p>
             </div>
@@ -122,6 +150,26 @@
         </div>
 
     </header>
+
+            <!-- ================ section with 960 px filter's ============ -->
+            <section class="fs-filters960px">
+                <div class="fs-filters960px__wrapper">
+                    <div class="fs-filters960px__onsale">
+                        <img src="img/onsale.jpg" alt="" class="fs-filters960px__img">
+                        <p class="fs-filters960px__title">On Sale</p>
+                    </div>
+                    <div class="fs-filters960px__musthave">
+                        <img src="img/special_offers.jpg" alt="" class="fs-filters960px__img">
+                        <p class="fs-filters960px__title">Special Offers</p>
+                    </div>
+                    <div class="fs-filters960px__offers">
+                        <img src="img/musthave.jpg" alt="" class="fs-filters960px__img">
+                        <p class="fs-filters960px__title">Must Have</p>
+                    </div>
+                </div>
+            </section>
+            <!-- ================ section with 960 px filter's end ============ -->
+
         <!-- ================== header end ================= -->
     <section class="fs-productSection">
         <!-- ================== sort line ================= -->
@@ -134,14 +182,14 @@
                 </div>
                 <div class="fs-productSection__sort">
                     <p class="fs-productSection__view">View as</p>
-                    <img src="img/sortblock.png" alt="" class="sort_block">
-                    <img src="img/sortline.png" alt="" class="sort_block">
+                    <img src="img/sortblockn.png" alt="" class="sort_block gray_click">
+                    <img src="img/sortline.png" alt="" class="sort_line">
                     <p class="fs-productSection__sortby">Sort alphabetically
                         <img src="img/sortdrop.png" alt="">
                     </p>
                 </div>
             </div>
-        <!-- ================== product's ================= -->
+        <!-- ================== product's  block's================= -->
             <div class="fs-products">
                 <div class="product_block">
                     <div class="product_block__shoes">
@@ -149,57 +197,93 @@
                     </div>
                     <div class="product_info">
                         <p class="product_price">$145.99</p>
-                        <p>Even&Odd</p>
+                        <p class="fs-shoes__name">Even&Odd</p>
+                        <p class="fs-shoes__icons">
+                            <img src="img/look.png" alt="">
+                            <img src="img/addtofav.png" alt="">
+                            <img src="img/share.png" alt="">
+                            <img src="img/addtocart.png" alt="">
+                        </p>
                     </div>
                 </div>
 
                 <div class="product_block">
                         <div class="product_block__shoes">
-                        <img src="img/shoes.jpg" alt="">
+                        <img src="img/shoes3.jpg" alt="">
+                        </div>
+                        <div class="product_info">
+                            <p class="product_price">$135.99</p>
+                            <p class="fs-shoes__name">Even&Odd</p>
+                            <p class="fs-shoes__icons">
+                                <img src="img/look.png" alt="">
+                                <img src="img/addtofav.png" alt="">
+                                <img src="img/share.png" alt="">
+                                <img src="img/addtocart.png" alt="">
+                            </p>
+                        </div>
+                </div>
+
+                <div class="product_block">
+                        <div class="product_block__shoes">
+                        <img src="img/shoes4.jpg" alt="">
+                        </div>
+                        <div class="product_info">
+                            <p class="product_price">$100.99</p>
+                            <p class="fs-shoes__name">Decollete</p>
+                            <p class="fs-shoes__icons">
+                                <img src="img/look.png" alt="">
+                                <img src="img/addtofav.png" alt="">
+                                <img src="img/share.png" alt="">
+                                <img src="img/addtocart.png" alt="">
+                            </p>
+                        </div>
+                </div>
+
+                <div class="product_block">
+                        <div class="product_block__shoes">
+                        <img src="img/shoes4.jpg" alt="">
+                        </div>
+                        <div class="product_info">
+                            <p class="product_price">$245.99</p>
+                            <p class="fs-shoes__name">Even&Odd</p>
+                            <p class="fs-shoes__icons">
+                                <img src="img/look.png" alt="">
+                                <img src="img/addtofav.png" alt="">
+                                <img src="img/share.png" alt="">
+                                <img src="img/addtocart.png" alt="">
+                            </p>
+                        </div>
+                </div>
+
+                <div class="product_block">
+                        <div class="product_block__shoes">
+                        <img src="img/shoes5.jpg" alt="">
                         </div>
                         <div class="product_info">
                             <p class="product_price">$145.99</p>
-                            <p>Even&Odd</p>
+                            <p class="fs-shoes__name">Decollete</p>
+                            <p class="fs-shoes__icons">
+                                <img src="img/look.png" alt="">
+                                <img src="img/addtofav.png" alt="">
+                                <img src="img/share.png" alt="">
+                                <img src="img/addtocart.png" alt="">
+                            </p>
                         </div>
-                    </div>
-
-                    <div class="product_block">
-                            <div class="product_block__shoes">
-                            <img src="img/shoes.jpg" alt="">
-                            </div>
-                            <div class="product_info">
-                                <p class="product_price">$145.99</p>
-                                <p>Even&Odd</p>
-                            </div>
-                        </div>
-
-                        <div class="product_block">
-                                <div class="product_block__shoes">
-                                <img src="img/shoes.jpg" alt="">
-                                </div>
-                                <div class="product_info">
-                                    <p class="product_price">$145.99</p>
-                                    <p>Even&Odd</p>
-                                </div>
-                            </div>
-
-                            <div class="product_block">
-                                    <div class="product_block__shoes">
-                                    <img src="img/shoes.jpg" alt="">
-                                    </div>
-                                    <div class="product_info">
-                                        <p class="product_price">$145.99</p>
-                                        <p>Even&Odd</p>
-                                    </div>
-                                </div>
+                </div>
     
                 <div class="product_block">
                     <div class="product_block__shoes">
-                    <img src="img/shoes.jpg" alt="">
+                    <img src="img/shoes6.jpg" alt="">
                     </div>
                     <div class="product_info">
                         <p class="product_price">$145.99</p>
-                        <p>Even&Odd</p>
+                        <p class="fs-shoes__name">Even&Odd</p>
+                        <p class="fs-shoes__icons">
+                            <img src="img/look.png" alt="">
+                            <img src="img/addtofav.png" alt="">
+                            <img src="img/share.png" alt="">
+                            <img src="img/addtocart.png" alt="">
+                        </p>
                     </div>
                 </div>
 
@@ -209,33 +293,367 @@
                         </div>
                         <div class="product_info">
                             <p class="product_price">$145.99</p>
-                            <p>Even&Odd</p>
+                            <p class="fs-shoes__name">Even&Odd</p>
+                            <p class="fs-shoes__icons">
+                                <img src="img/look.png" alt="">
+                                <img src="img/addtofav.png" alt="">
+                                <img src="img/share.png" alt="">
+                                <img src="img/addtocart.png" alt="">
+                            </p>
                         </div>
                     </div>
     
-                    <div class="product_block">
-                            <div class="product_block__shoes">
+                <div class="product_block">
+                        <div class="product_block__shoes">
+                        <img src="img/shoes2.jpg" alt="">
+                        </div>
+                        <div class="product_info">
+                            <p class="product_price">$145.99</p>
+                            <p class="fs-shoes__name">Decollete</p>
+                            <p class="fs-shoes__icons">
+                                <img src="img/look.png" alt="">
+                                <img src="img/addtofav.png" alt="">
+                                <img src="img/share.png" alt="">
+                                <img src="img/addtocart.png" alt="">
+                            </p>
+                        </div>
+                    </div>
+    
+                <div class="product_block">
+                        <div class="product_block__shoes">
+                        <img src="img/shoes3.jpg" alt="">
+                        </div>
+                        <div class="product_info">
+                            <p class="product_price">$145.99</p>
+                            <p class="fs-shoes__name">Even&Odd</p>
+                            <p class="fs-shoes__icons">
+                                <img src="img/look.png" alt="">
+                                <img src="img/addtofav.png" alt="">
+                                <img src="img/share.png" alt="">
+                                <img src="img/addtocart.png" alt="">
+                            </p>
+                        </div>
+                    </div>
+            </div>
+            <!-- ================== product's  line================= -->
+            <div class="fs-products-line">
+                    <div class="product_block__line">
+                        <div class="product_block__shoes-line">
+                        <img src="img/shoes4.jpg" alt="">
+                        <div class="fs-rewiew__wrapper">
+                            <p class="fs-shoes__nameUP-line">Even&Odd</p>
+                            <ul class="fs-shoes__list-line">    
+                                <li>Metallic accents.</li>
+                                <li>Leather lining.</li>
+                                <li>Luxurious leather and textile footbed.</li>
+                                <li>Measurements:</li>
+                                    <ul>
+                                    <li> Heel Height: 4 in</li>s
+                                    <li>  Weight: 8 oz</li>
+                                    </ul>
+                            </ul>
+                        </div>
+                        </div>
+                        <div class="product_info-line">
+                            <p class="product_price-line">$145.99</p>
+                            <p class="fs-shoes__name-line">Decollete</p>
+                            <p class="fs-shoes__icons-line">
+                                <img src="img/look.png" alt="">
+                                <img src="img/addtofav.png" alt="">
+                                <img src="img/share.png" alt="">
+                                <img src="img/addtocart.png" alt="">
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="product_block__line">
+                            <div class="product_block__shoes-line">
                             <img src="img/shoes.jpg" alt="">
+                            <div class="fs-rewiew__wrapper">
+                                <p class="fs-shoes__nameUP-line">Decollete</p>
+                                <ul class="fs-shoes__list-line">    
+                                    <li>Metallic accents.</li>
+                                    <li>Leather lining.</li>
+                                    <li>Luxurious leather and textile footbed.</li>
+                                    <li>Measurements:</li>
+                                        <ul>
+                                        <li> Heel Height: 4 in</li>
+                                        <li>  Weight: 8 oz</li>
+                                        </ul>
+                                </ul>
+                            </div>
+                            </div>
+                            <div class="product_info-line">
+                                <p class="product_price-line">$145.99</p>
+                                <p class="fs-shoes__name-line">Even&Odd</p>
+                                <p class="fs-shoes__icons-line">
+                                    <img src="img/look.png" alt="">
+                                    <img src="img/addtofav.png" alt="">
+                                    <img src="img/share.png" alt="">
+                                    <img src="img/addtocart.png" alt="">
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="product_block__line">
+                                <div class="product_block__shoes-line">
+                                <img src="img/shoes2.jpg" alt="">
+                                <div class="fs-rewiew__wrapper">
+                                    <p class="fs-shoes__nameUP-line">Decollete</p>
+                                    <ul class="fs-shoes__list-line">    
+                                        <li>Metallic accents.</li>
+                                        <li>Leather lining.</li>
+                                        <li>Luxurious leather and textile footbed.</li>
+                                        <li>Measurements:</li>
+                                            <ul>
+                                            <li> Heel Height: 4 in</li>
+                                            <li>  Weight: 8 oz</li>
+                                            </ul>
+                                    </ul>
+                                </div>
+                                </div>
+                                <div class="product_info-line">
+                                    <p class="product_price-line">$145.99</p>
+                                    <p class="fs-shoes__name-line">Even&Odd</p>
+                                    <p class="fs-shoes__icons-line">
+                                        <img src="img/look.png" alt="">
+                                        <img src="img/addtofav.png" alt="">
+                                        <img src="img/share.png" alt="">
+                                        <img src="img/addtocart.png" alt="">
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="product_block__line">
+                                    <div class="product_block__shoes-line">
+                                    <img src="img/shoes3.jpg" alt="">
+                                    <div class="fs-rewiew__wrapper">
+                                        <p class="fs-shoes__nameUP-line">Decollete</p>
+                                        <ul class="fs-shoes__list-line">    
+                                            <li>Metallic accents.</li>
+                                            <li>Leather lining.</li>
+                                            <li>Luxurious leather and textile footbed.</li>
+                                            <li>Measurements:</li>
+                                                <ul>
+                                                <li> Heel Height: 4 in</li>
+                                                <li>  Weight: 8 oz</li>
+                                                </ul>
+                                        </ul>
+                                    </div>
+                                    </div>
+                                    <div class="product_info-line">
+                                        <p class="product_price-line">$145.99</p>
+                                        <p class="fs-shoes__name-line">Even&Odd</p>
+                                        <p class="fs-shoes__icons-line">
+                                            <img src="img/look.png" alt="">
+                                            <img src="img/addtofav.png" alt="">
+                                            <img src="img/share.png" alt="">
+                                            <img src="img/addtocart.png" alt="">
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="product_block__line">
+                                        <div class="product_block__shoes-line">
+                                        <img src="img/shoes4.jpg" alt="">
+                                        <div class="fs-rewiew__wrapper">
+                                            <p class="fs-shoes__nameUP-line">Even&Odd</p>
+                                            <ul class="fs-shoes__list-line">    
+                                                <li>Metallic accents.</li>
+                                                <li>Leather lining.</li>
+                                                <li>Luxurious leather and textile footbed.</li>
+                                                <li>Measurements:</li>
+                                                    <ul>
+                                                    <li> Heel Height: 4 in</li>
+                                                    <li>  Weight: 8 oz</li>
+                                                    </ul>
+                                            </ul>
+                                        </div>
+                                        </div>
+                                        <div class="product_info-line">
+                                            <p class="product_price-line">$145.99</p>
+                                            <p class="fs-shoes__name-line">Even&Odd</p>
+                                            <p class="fs-shoes__icons-line">
+                                                <img src="img/look.png" alt="">
+                                                <img src="img/addtofav.png" alt="">
+                                                <img src="img/share.png" alt="">
+                                                <img src="img/addtocart.png" alt="">
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="product_block__line">
+                                            <div class="product_block__shoes-line">
+                                            <img src="img/shoes5.jpg" alt="">
+                                            <div class="fs-rewiew__wrapper">
+                                                <p class="fs-shoes__nameUP-line">Decollete</p>
+                                                <ul class="fs-shoes__list-line">    
+                                                    <li>Metallic accents.</li>
+                                                    <li>Leather lining.</li>
+                                                    <li>Luxurious leather and textile footbed.</li>
+                                                    <li>Measurements:</li>
+                                                        <ul>
+                                                        <li> Heel Height: 4 in</li>
+                                                        <li>  Weight: 8 oz</li>
+                                                        </ul>
+                                                </ul>
+                                            </div>
+                                            </div>
+                                            <div class="product_info-line">
+                                                <p class="product_price-line">$145.99</p>
+                                                <p class="fs-shoes__name-line">Even&Odd</p>
+                                                <p class="fs-shoes__icons-line">
+                                                    <img src="img/look.png" alt="">
+                                                    <img src="img/addtofav.png" alt="">
+                                                    <img src="img/share.png" alt="">
+                                                    <img src="img/addtocart.png" alt="">
+                                                </p>
+                                            </div>
+                                        </div>
+            
+
+        </div>
+
+
+
+        </div>
+    </section>
+    
+<!-- ==================================================================================== -->
+        <!-- ================== New arrival's 960px ================= -->
+        <section class="fs-products__max960px">
+            <!-- filter -->
+        <div class="fs-productSection__wrapper">
+                <div class="fs-newarrival">
+                    <div class="fs-productSection__title">
+                        <p>New arrivals on FooseShoes</p>
+                        <p></p>
+                    </div>
+                    <div class="fs-productSection__sort">
+                        <p class="fs-productSection__sortbyS">Show all</p>
+                    </div>
+                </div>
+            <!-- ====== -->
+            <div class="fs-products960px">
+                <div class="product_block960px">
+                        <div class="product_block__shoes">
+                        <img src="img/shoes.jpg" alt="">
+                        </div>
+                        <div class="product_info">
+                            <p class="product_price">$145.99</p>
+                            <p class="fs-shoes__name">Even&Odd</p>
+                            <p class="fs-shoes__icons">
+                                <img src="img/look.png" alt="">
+                                <img src="img/addtofav.png" alt="">
+                                <img src="img/share.png" alt="">
+                                <img src="img/addtocart.png" alt="">
+                            </p>
+                        </div>
+                </div>
+
+                <div class="product_block960px">
+                        <div class="product_block__shoes">
+                        <img src="img/shoes2.jpg" alt="">
+                        </div>
+                        <div class="product_info">
+                            <p class="product_price">$145.99</p>
+                            <p class="fs-shoes__name">Even&Odd</p>
+                            <p class="fs-shoes__icons">
+                                <img src="img/look.png" alt="">
+                                <img src="img/addtofav.png" alt="">
+                                <img src="img/share.png" alt="">
+                                <img src="img/addtocart.png" alt="">
+                            </p>
+                        </div>
+                </div>
+
+                <div class="product_block960px">
+                        <div class="product_block__shoes">
+                        <img src="img/shoes3.jpg" alt="">
+                        </div>
+                        <div class="product_info">
+                            <p class="product_price">$145.99</p>
+                            <p class="fs-shoes__name">Decollete</p>
+                            <p class="fs-shoes__icons">
+                                <img src="img/look.png" alt="">
+                                <img src="img/addtofav.png" alt="">
+                                <img src="img/share.png" alt="">
+                                <img src="img/addtocart.png" alt="">
+                            </p>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================================================================================== -->
+
+        <!-- ================== Best sellers of the month's ================= -->
+            <!-- filter -->
+            <div class="fs-productSection__wrapper">
+                    <div class="fs-newarrival">
+                        <div class="fs-productSection__title">
+                            <p>Best sellers of the month</p>
+                            <p></p>
+                        </div>
+                        <div class="fs-productSection__sort">
+                            <p class="fs-productSection__sortbyS">Show all</p>
+                        </div>
+                    </div>
+                <!-- ====== -->
+                <div class="fs-products960px">
+                    <div class="product_block960px">
+                            <div class="product_block__shoes">
+                            <img src="img/shoes4.jpg" alt="">
                             </div>
                             <div class="product_info">
                                 <p class="product_price">$145.99</p>
-                                <p>Even&Odd</p>
+                                <p class="fs-shoes__name">Even&Odd</p>
+                                <p class="fs-shoes__icons">
+                                    <img src="img/look.png" alt="">
+                                    <img src="img/addtofav.png" alt="">
+                                    <img src="img/share.png" alt="">
+                                    <img src="img/addtocart.png" alt="">
+                                </p>
                             </div>
-                        </div>
+                    </div>
     
-                        <div class="product_block">
-                                <div class="product_block__shoes">
-                                <img src="img/shoes.jpg" alt="">
-                                </div>
-                                <div class="product_info">
-                                    <p class="product_price">$145.99</p>
-                                    <p>Even&Odd</p>
-                                </div>
+                    <div class="product_block960px">
+                            <div class="product_block__shoes">
+                            <img src="img/shoes5.jpg" alt="">
                             </div>
+                            <div class="product_info">
+                                <p class="product_price">$145.99</p>
+                                <p class="fs-shoes__name">Decollete</p>
+                                <p class="fs-shoes__icons">
+                                    <img src="img/look.png" alt="">
+                                    <img src="img/addtofav.png" alt="">
+                                    <img src="img/share.png" alt="">
+                                    <img src="img/addtocart.png" alt="">
+                                </p>
+                            </div>
+                    </div>
+    
+                    <div class="product_block960px">
+                            <div class="product_block__shoes">
+                            <img src="img/shoes5.jpg" alt="">
+                            </div>
+                            <div class="product_info">
+                                <p class="product_price">$145.99</p>
+                                <p class="fs-shoes__name">Even&Odd</p>
+                                <p class="fs-shoes__icons">
+                                    <img src="img/look.png" alt="">
+                                    <img src="img/addtofav.png" alt="">
+                                    <img src="img/share.png" alt="">
+                                    <img src="img/addtocart.png" alt="">
+                                </p>
+                            </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
-        <!-- ================== product's end's ================= -->
+        </section>
+
+<!-- ==================================================================================== -->
     <section class="fs-article">
         <div class="fs-article__wrapper">
             <div class="fs-article__shipping">
@@ -291,24 +709,32 @@
                 </div>
                 <div class="flickr_widget">
                     <p class="fs-footer__tittle">FLICKR WIDGET</p>
-                    <img src="img/flickr.png" alt="">
+                    <div>
+                        <img src="img/fl1.jpg" alt="">
+                        <img src="img/fl2.jpg" alt="">
+                        <img src="img/fl3.jpg" alt="">
+                        <img src="img/fl4.jpg" alt="">
+                        <img src="img/fl5.jpg" alt="">
+                        <img src="img/fl6.jpg" alt="">
+                    </div>
+                    <!-- <img src="img/flickr.png" alt=""> -->
                 </div>
             </div>
         </div>
         <div class="fs-contact">
             <div class="fs-contact__wrapper">
-                <div class="email">
-                <input type="email" name="emailaddress" id="email" placeholder="Enter email for newsletter">
-                <button id="button_email">></button>
+                <div class="email" onSubmit="WriteToFile(this)">
+                        <input type="email" name="emailaddress" id="email" placeholder="Enter email for newsletter">
+                        <button id="button_email">></button>
                 </div>
 
-                    <div class="fs-contact__social">
-                       <a href="https://www.facebook.com/" target="_blank"><img src="img/fb.jpg" alt="" ></a>
-                       <a href="https://twitter.com/" target="_blank"><img src="img/tw.jpg" alt=""></a>
-                       <a href="https://plus.google.com/discover" target="_blank"><img src="img/google.jpg" alt=""></a>
-                       <a href="https://www.linkedin.com/" target="_blank"><img src="img/in.jpg" alt=""></a>
-                       <a href="https://www.flickr.com/" target="_blank"><img src="img/fl.jpg" alt=""></a>
-                    </div>
+                <div class="fs-contact__social">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="img/fb.jpg" alt="" ></a>
+                    <a href="https://twitter.com/" target="_blank"><img src="img/tw.jpg" alt=""></a>
+                    <a href="https://plus.google.com/discover" target="_blank"><img src="img/google.jpg" alt=""></a>
+                    <a href="https://www.linkedin.com/" target="_blank"><img src="img/in.jpg" alt=""></a>
+                    <a href="https://www.flickr.com/" target="_blank"><img src="img/fl.jpg" alt=""></a>
+                </div>
             </div>
 
         </div>
@@ -334,8 +760,9 @@
     <script   src="https://code.jquery.com/jquery-3.3.1.min.js"   
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   
     crossorigin="anonymous"></script>
-    <script type="text/javascript" src="slick.min.js"></script>
-    <script src="main.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="product.json"></script>
+    <script src="build/js/main.js"></script>
 
 </body>
 </html>
